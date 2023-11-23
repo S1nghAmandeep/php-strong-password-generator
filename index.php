@@ -1,7 +1,7 @@
 <?php
 
-$get_max_num = (int)$_GET['number'] ?? '';
-// var_dump($get_max_num);
+$get_max_num = $_GET['number'] ?? 1;
+var_dump($get_max_num);
 
 $random_letter = 'abcdefghijklmnopqrstuvwxyzç@ò#à!ì0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 // var_dump($random_letter[10]);

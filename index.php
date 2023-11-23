@@ -20,12 +20,13 @@ include 'functions.php';
 
 <body>
     <main>
+        <h1>Crea la tua password</h1>
         <form action="" method="GET">
             <input type="number" name="number" id="number" placeholder="Inseriesci il numero maggiore di 7">
             <button>Invia</button>
         </form>
-
-        <h1>La tua password è: <?php echo $password ?></h1>
+        <h3>La tua password è:</h3>
+        <strong><?php echo $password ?></strong>
     </main>
 </body>
 

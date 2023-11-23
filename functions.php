@@ -11,7 +11,7 @@ function generate_pass($lenght, $letters)
 
         return $password;
     } else {
-        return 'inserire il numero maggiore di 7';
+        return '!!errore!! inserire il numero maggiore di 7';
     }
 }
 // echo generate_pass($get_max_num, $random_letter);

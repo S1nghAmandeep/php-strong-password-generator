@@ -6,7 +6,7 @@ $get_max_num = (int)$_GET['number'] ?? '';
 $random_letter = 'abcdefghijklmnopqrstuvwxyzç@ò#à!ì0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 // var_dump($random_letter[10]);
 
-include 'functions.php';
+require __DIR__ . '/functions.php';
 
 ?>
 <!DOCTYPE html>

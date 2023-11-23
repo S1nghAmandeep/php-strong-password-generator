@@ -7,11 +7,14 @@ $get_max_num = isset($_GET['number']) ? (int)$_GET['number'] : '';
 $random_letter = 'abcdefghijklmnopqrstuvwxyzç@ò#à!ì0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 // var_dump($random_letter[10]);
 
-// require __DIR__ . '/functions.php';
 session_start();
-require '../functions.php';
+
+require __DIR__ . '/../functions.php';
 
 $_SESSION['passowrd'] = $password;
+if ($get_max_num !== '') {
+    header('Location: ./session.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
